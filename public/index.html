@@ -19,14 +19,13 @@
   <body>
     <div class="container">
       <h3>Add User</h3>
-      <form action="" method="POST" class="container">
+      <form class="container">
         <div class="form-group">
           <label for="name">NAME: </label>
           <input
             type="text"
             name="name"
             id="1"
-            value="<%=locals.name%>"
             class="form-control"
           />
         </div>
@@ -35,7 +34,6 @@
           <input
             type="number"
             age="age"
-            value="<%= locals.age %>"
             class="form-control"
           />
         </div>
@@ -44,7 +42,6 @@
           gender="gender"
           id=""
           class="form-control"
-          value="<%= locals.gender %>"
         >
           <option value="male">Male</option>
           <option value="female">Female</option>
