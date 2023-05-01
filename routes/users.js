@@ -46,7 +46,8 @@ router
   })
   .put((req, res) => {
     const userId = req.params.id;
-    const userData = req.body;
+    let userData = req.body;
+    // userData.id = Number(userId); second method to add id
     const findUser = jsonData.find((i) => i.id === Number(userId));
     if (!findUser) {
       return res.status(409).send({ error: true, msg: "User not exist" });

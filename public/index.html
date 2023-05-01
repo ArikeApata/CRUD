@@ -16,70 +16,36 @@
     />
     <title>Document</title>
   </head>
-  <body>
-    <div class="container">
-      <h3>Add User</h3>
-      <form class="container">
-        <div class="form-group">
-          <label for="name">NAME: </label>
-          <input
-            type="text"
-            name="name"
-            id="1"
-            class="form-control"
-          />
-        </div>
-        <div class="form-group mb-2">
-          <label for="age">Age: </label>
-          <input
-            type="number"
-            age="age"
-            class="form-control"
-          />
-        </div>
-        <label for="">Gender: </label>
-        <select
-          gender="gender"
-          id=""
-          class="form-control"
-        >
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-        <button class="btn btn-success px-2 py-0 mt-2" type="submit">
-          Submit
-        </button>
-      </form>
+  <body class="">
+    <div class="container my-2">
+      <h3 class="text-center py-2">Add User</h3>
+      <div class="mb-3">
+        <form class="add-user container" action="post">
+          <div class="form-group">
+            <label for="name">NAME: </label>
+            <input type="text" name="name" id="name-value" class="form-control" />
+          </div>
+          <div class="form-group mb-2">
+            <label for="age">Age: </label>
+            <input type="number" age="age" class="form-control" id="age-value" />
+          </div>
+          <label for="about">Tell us About You:</label>
+          <textarea class="form-control" name="" id="about-value" cols="30" rows="10"></textarea>
+          <label for="">Gender: </label>
+          <select gender="gender" id="gender-value" class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <button class="btn btn-success px-2 py-0 mt-2 submit" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
 
-      <div class="user-list row">
-        <div class="card col-md-6 bg-light mt-4">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
-            </h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="text-info card-link">Edit</a>
-            <a href="#" class="text-danger card-link">Delete</a>
-          </div>
-        </div>
-        <div class="card col-md-6 bg-light mt-4">
-          <div class="card-body">
-            <h5 class="card-title">Name</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">
-              Age
-            </h6>
-            <p class="card-text">
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, incidunt!
-            </p>
-             <a href="#" class="text-info card-link">Edit</a>
-            <a href="#" class="text-danger card-link">Delete</a>
-          </div>
-        </div>
+      <div class="user-list mt-3 row mx-auto">
+        
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
